@@ -31,7 +31,7 @@ def replace_url(slug, content):
     for line in content.splitlines():
         patterns = [
             r'!\[.*?\]\((.*?)\)',
-            r'<img.*?src="(.*?)".*?/>',
+            r'<img.*?src="(.*?)".*?>',
             r'\[.*?\]\((.*?)\)',
             r'<a.*?href="(.*?)".*?>',
         ]
