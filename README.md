@@ -6,11 +6,11 @@
 
 ### 1. Add `github2pypi` as submodule.
 
-See [gdown](https://github.com/wkentaro/gdown) as an example.
+See [gdown](https://github.com/wkentaro/imgviz) as an example.
 
 ```bash
-git clone https://github.com/wkentaro/gdown
-cd gdown
+git clone https://github.com/wkentaro/imgviz
+cd imgviz
 
 git submodule add https://github.com/wkentaro/github2pypi.git
 ```
@@ -24,7 +24,7 @@ import github2pypi
 ...
 with open('README.md') as f:
     long_description = github2pypi.replace_url(
-        slug='wkentaro/gdown', content=f.read()
+        slug='wkentaro/imgviz', content=f.read()
     )
 
 setup(
