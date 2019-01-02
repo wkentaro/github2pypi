@@ -6,7 +6,7 @@
 
 ### 1. Add `github2pypi` as submodule.
 
-See [gdown](https://github.com/wkentaro/imgviz) as an example.
+See [imgviz](https://github.com/wkentaro/imgviz) as an example.
 
 ```bash
 git clone https://github.com/wkentaro/imgviz
