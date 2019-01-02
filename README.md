@@ -23,6 +23,8 @@ import github2pypi
 
 ...
 with open('README.md') as f:
+    # e.g., ![](examples/image.jpg) ->
+    #       ![](https://github.com/wkentaro/imgviz/blob/master/examples/image.jpg)
     long_description = github2pypi.replace_url(
         slug='wkentaro/imgviz', content=f.read()
     )
