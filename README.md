@@ -1,5 +1,7 @@
 # github2pypi
 
+[![Build Status](https://travis-ci.com/wkentaro/github2pypi.svg?branch=master)](https://travis-ci.com/wkentaro/github2pypi)
+
 
 ## Usage
 
