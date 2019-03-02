@@ -1,7 +1,7 @@
 import re
 
 
-def replace_url(slug, content):
+def replace_url(slug, content, branch='master'):
 
     def repl(match):
         if not match:
@@ -12,8 +12,8 @@ def replace_url(slug, content):
             return match.group(0)
 
         url_new = (
-            'https://github.com/{slug}/blob/master/{url}'
-            .format(slug=slug, url=url)
+            'https://github.com/{slug}/blob/{branch}/{url}'
+            .format(slug=slug, branch=branch, url=url)
         )
         if re.match(r'.*[\.jpg|\.png]$', url_new):
             url_new += '?raw=true'
