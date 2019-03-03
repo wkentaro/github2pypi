@@ -1,6 +1,14 @@
-# github2pypi
+<h1 align="center">
+  github2pypi
+</h1>
 
-[![Build Status](https://travis-ci.com/wkentaro/github2pypi.svg?branch=master)](https://travis-ci.com/wkentaro/github2pypi)
+<h4 align="center">
+  Utils to release Python repository on GitHub to PyPi
+</h4>
+
+<div align="center">
+  <a href="https://travis-ci.com/wkentaro/github2pypi"><img src="https://travis-ci.com/wkentaro/github2pypi.svg?branch=master"></a>
+</div>
 
 
 ## Usage
