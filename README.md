@@ -45,3 +45,9 @@ setup(
     long_description_content_type='text/markdown',
 )
 ```
+
+
+## Examples
+
+- https://github.com/wkentaro/labelme
+- https://github.com/wkentaro/imgviz
