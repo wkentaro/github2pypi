@@ -15,7 +15,7 @@ def replace_url(slug, content, branch='master'):
             'https://github.com/{slug}/blob/{branch}/{url}'
             .format(slug=slug, branch=branch, url=url)
         )
-        if re.match(r'.*[\.jpg|\.png]$', url_new):
+        if re.match(r'.*[\.jpg|\.png|\.gif]$', url_new):
             url_new += '?raw=true'
 
         start0, end0 = match.regs[0]
@@ -31,7 +31,7 @@ def replace_url(slug, content, branch='master'):
     for line in content.splitlines():
         patterns = [
             r'!\[.*?\]\((.*?)\)',
-            r'<img.*?src="(.*?)".*?>',
+            r'<img.*?src="(.*?)".*>',
             r'\[.*?\]\((.*?)\)',
             r'<a.*?href="(.*?)".*?>',
         ]
