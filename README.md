@@ -7,7 +7,7 @@
 </h4>
 
 <div align="center">
-  <a href="https://travis-ci.com/wkentaro/github2pypi"><img src="https://travis-ci.com/wkentaro/github2pypi.svg?branch=master"></a>
+  <a href="https://github.com/wkentaro/github2pypi/actions"><img src="https://github.com/wkentaro/github2pypi/workflows/ci/badge.svg"></a>
 </div>
 
 
