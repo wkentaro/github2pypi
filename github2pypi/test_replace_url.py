@@ -8,5 +8,5 @@ def test_replace_test():
 
     assert (
         content
-        == "![](https://github.com/wkentaro/imgviz/blob/main/.readme/teaser.jpg?raw=true)"
+        == "![](https://github.com/wkentaro/imgviz/blob/main/.readme/teaser.jpg?raw=true)"  # NOQA
     )
