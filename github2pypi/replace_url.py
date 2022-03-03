@@ -1,7 +1,7 @@
 import re
 
 
-def replace_url(slug, content, branch="main"):
+def replace_url(slug, content, branch):
     def repl(match):
         if not match:
             return

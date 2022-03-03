@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -11,20 +11,25 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
       matrix:
-        python-version: [2.7, 3.5, 3.6, 3.7]
+        python-version: [2.7, 3.6, 3.7, 3.8, 3.9]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
 
     - name: Lint
       run: |
-        pip install -U black &&  black --check . || true
-        pip install -U hacking
+        pip install black==22.1.0
+        pip install hacking==4.1.0
         flake8 .
+        black --diff --check .
+
+    - name: Test
+      run: |
+        pip install pytest
+        pytest -vsx .
