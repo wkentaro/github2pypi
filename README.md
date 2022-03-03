@@ -13,6 +13,8 @@
 
 ## Usage
 
+### 1. Install `github2pypi`.
+
 ```bash
 pip install github2pypi
 ```
